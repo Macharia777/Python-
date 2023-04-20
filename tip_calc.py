@@ -35,8 +35,8 @@ number_of_people_to_split = int(input("How many people to split the bill? "))
 
 
 #let's create total payment that one person or each person would pay
-total_Payment = total_bill_tip / number_of_people_to_split
+total_Payment = round(total_bill_tip / number_of_people_to_split,2)
 
 #let's output the total payment
-print(round(total_Payment,2))
+print(f"Each person should pay: ${total_Payment}")
 
