@@ -96,36 +96,3 @@
 #         print(" ", end="")
 
 #     print("#")
-
-# Let's create a scenario where a user will input an int only and not a string
-# while True:
-# 	try:
-# 		number = int(input("Please Enter a number: "))
-# 		break;
-
-# 	except ValueError:
-# 		print("You did not enter a number")
-
-# 	except:
-# 		print("An unknown Error occured")
-# print("Congratulations you have entered a number")
-
-import random
-
-while True:
- try:
-     guess_random = int(input("Guess a number between 1 and 10: "))
-     Random_number = random.randint(1,10) + 1
-     
-     if guess_random != Random_number:        		 
-        print("Not right number")
-     elif guess_random == Random_number:
-         print("You have guessed right")
-         break
-     elif guess_random > Random_number:
-         print("Your number is above 1 - 10")
-         
- except ValueError:
-     print("You are only allowed to use numbers")
-
-print("Thank you for playing.")
